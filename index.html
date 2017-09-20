@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>LocalStorage Test</title>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="storage.js"></script>
+
+  <a href="page2.html">Goto Next</a>
+
+  <script>
+    window.onload = function() {
+      var getInput = prompt("Input Stuff");
+      localStorage.setItem("storageName",getInput);
+    }
+  </script>
+</body>
+</html>
